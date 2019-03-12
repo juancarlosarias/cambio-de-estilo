@@ -1,68 +1,51 @@
 <!DOCTYPE html>
-<html  lang = " en " >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO List Ap</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <p>
+            <label for="new-task">Nueva Tarea</label>
+            <input id="new-task" type="text"><button class="add">Agregar</button>
+        </p>
 
-<cabeza >
-    <meta  charset = " UTF-8 " >
-    <title > TODO List App </title >
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
-    <style>  
-            body{font-family: 'Open Sans', sans-serif; } 
-            div {width: 30%;
-                             border: black 3px solid;
-                             margin-left: auto;
-                             margin-right: auto;
-                            }
-
-    </style>
-    
-   
-    
-</cabeza >
-
-
-<cuerpo >
-      
-    <body bgcolor="light blue">  
-        <div  class = " container " >
-        <h1 > Lista de Tareas </h1 >
-        <p >
-            <label  for = " new-task " > Nueva Tarea </label >
-            <input  id = " nueva tarea "  type = " text "> <button  class = " add " > Agregar </button >
-        </p >
-
-        <h2> Lista de Tareas Pendientes </h2 >
-        <ul  id = " tareas incompletas " >
-            <li >
-                <etiqueta >
-                    <input  type = " checkbox " />
+        <h2>Lista de Tareas Pendientes</h2>
+        <ul id="incomplete-tasks">
+            <li>
+                <label>
+                    <input type="checkbox"/>
                     Tarea 1
-                </label >
-                <button  class = " edit " > Editar </button >
-                <button  class = " delete " > Borrar </etiqueta> </button >
-            </li >
-            <li >
-                <etiqueta >
-                    <input  type = " checkbox " />
+                </label>
+                <button class="edit">Editar</button>
+                <button class="delete">Borrar</button>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox"/>
                     Tarea 2
-                </label >
-                <button  class = " edit " > Editar </button >
-                <button  class = " delete " > Borrar </button > </li >
+                </label>
+                <button class="edit">Editar</button>
+                <button class="delete">Borrar</button></li>
 
-        </ul >
+        </ul>
 
-        <h2 > Lista de Tareas Completadas </h2 >
-        <ul  id = " tareas completadas " >
-            <li >
-                <etiqueta >
-                    <tipo de entrada  = " casilla de verificación " marcada > 
+        <h2>Lista de Tareas Completadas</h2>
+        <ul id="completed-tasks">
+            <li>
+                <label>
+                    <input type="checkbox" checked>
                     Tarea 0
-                </label >
-                <button  class = " edit " > Editar </button >
-                <button  class = " delete " > Borrar </button >
-            </li >
-        </ul >
-    </div >
+                </label>
+                <button class="edit">Editar</button>
+                <button class="delete">Borrar</button>
+            </li>
+        </ul>
+    </div>
 
-</cuerpo >
-</html >
+</body>
+</html>
